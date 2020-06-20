@@ -1,0 +1,93 @@
+/* Start Global Style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(../images/android-android-phone-cell-phone-cellphone-404280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+/* End Global Style */
+
+/* Start form Style */
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #01010a;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px #f39c12;
+    transition: all 0.25s ease-in-out;
+}
+.box:hover {
+    box-shadow: 0px 0px 5px 1px #16a085;
+}
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "text"],
+.box input[type = "password"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.25s ease-in-out;
+    font-size: 16.5px;
+}
+.box input[type = "text"]:focus,
+.box input[type = "password"]:focus {
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box input[type = "submit"] {
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.25s ease-in-out;
+    font-size: 16.5px;
+    cursor: pointer;
+}
+.box input[type = "submit"]:hover {
+    background-color: #2ecc71;
+}
+@media (max-width: 575px) {
+  .box {
+      width: 70%;
+      padding: 20px;
+  }
+  .box input[type = "text"]:focus,
+  .box input[type = "password"]:focus {
+      width: 230px;
+  }
+  .box input[type = "text"],
+  .box input[type = "password"] {
+      padding: 12px 8px;
+      width: 190px;
+      font-size: 16px;
+  }
+  .box input[type = "submit"] {
+      padding: 12px 35px;
+      font-size: 16px;
+  }
+}
+/* End form Style */
